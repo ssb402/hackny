@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <? include "header.php" ?>
+  <?php include "header.php" ?>
 
   <body>
 
@@ -56,7 +56,7 @@
       </div>
 
       <hr>
-        <? include "footer.php" ?>
+        <?php include "footer.php" ?>
 
     </div> <!-- /container -->
 
