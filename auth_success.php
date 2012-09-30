@@ -19,7 +19,7 @@ $response = curl_exec($ch);
 curl_close($ch);
  $arr= json_decode($response,true);
  echo $arr['access_token'];
-echo 'tp';
+
   } else {
     header("Location: http://localhost");
   }
