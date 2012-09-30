@@ -12,51 +12,39 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Find A Party Tonight!</a>
+          <a class="brand" href="#">Party Finder</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="/">Home</a></li>
               <li><a href="about.php">About</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
     <div class="container">
+        <center>
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+              <h1>Party Finder</h1>
+              <h2>Helping people get laid since 2012</h2>
+                <!-- Example row of columns -->
+                <div class="row-fluid">
+                    <div class="span12">
+                          <form id="login_page" method="post" action="authenticate.php" class="form">
+                              <p>
+                                  <button type="submit" class="btn-link"><img src="./img/signin-foursquare.png" width="300px" height="45px"/></input>
+                              </p>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </center>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1 style="text-align:center">Find A Party Tonight!</h1>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span12">
-            <center>
-                <p>
-                    Enter your zip code:
-                </p>
-                <form id="zip-form" method="post" action="authenticate.php" class="form">
-                    <p>
-                        <input type="text" placeholder="Only valid US zip codes">
-                    </p>
-                    <p>
-                        <button class="btn btn-large btn-primary" type="submit">Let's Party!</button>
-                    </p>
-                </form>
-            </center>
-        </div>
-      </div>
-
-      <hr>
-        <?php include "footer.php" ?>
+        <hr>
+          <?php include "footer.php" ?>
 
     </div> <!-- /container -->
 

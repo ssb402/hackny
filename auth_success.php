@@ -2,6 +2,7 @@
     
   <?php
   $code = $_GET['code'];
+  $access_token = 
   $client_id = "OJNG52NOMHAGXBNQ2V1TWFRJ05PFRWK2AMWCZADNAPWVPZXW";
   $client_secret = "0AQTET2PEKE5DIY151VYV445ZNZIZRLYFPDMSIS4XMCFN12J";
   
