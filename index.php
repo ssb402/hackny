@@ -43,12 +43,12 @@
                 <p>
                     Enter your zip code:
                 </p>
-                <form id="zip-form" method="post" action="party_list.php" class="form">
+                <form id="zip-form" method="post" action="authenticate.php" class="form">
                     <p>
                         <input type="text" placeholder="Only valid US zip codes">
                     </p>
                     <p>
-                        <button class="btn btn-large btn-primary" type="button">Let's Party!</button>
+                        <button class="btn btn-large btn-primary" type="submit">Let's Party!</button>
                     </p>
                 </form>
             </center>
