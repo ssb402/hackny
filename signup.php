@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	
     <meta charset="utf-8">
     <title>Find A Party Tonight!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,15 +24,26 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+   <!-- <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png"> -->
   </head>
 
   <body>
-
+  <script>
+  function validate()
+  {
+	alert("Hi");
+	if(document.registerform.elements[0].value == "")
+	{
+		alert("Please enter a valid foursquare id");
+		return false;
+	}
+	return true;
+  }
+  </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -40,17 +52,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Find A Party Tonight!</a>
+          <a class="brand" href="#"></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#"></a></li>
+              <li><a href="#about"></a></li>
+              <li><a href="#contact"></a></li>
             </ul>
             <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
             </form>
           </div><!--/.nav-collapse -->
         </div>
@@ -59,28 +68,33 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1 style="text-align:center">Find A Party Tonight!</h1>
-      </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span12">
-            <center>
-                <p>
-                    Enter your zip code:
-                </p>
-                <form id="zip-form" action="post" class="form form-horizontal">
-                    <p>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <button class="btn btn-large btn-primary" type="button">Go Fetch!</button>
-                    </p>
-                </form>
-            </center>
-        </div>
+	  <form class = "registerform1" name = "registerform" onsubmit = "return validate()" action = "signin.php">
+			<table name = "fields">
+					<tr>
+					<td>FoursquareID</td>
+					<td><input class="span2" name = "foursquareid" type="text"><br/></td>
+					</tr>
+	                <tr>
+					<td>Interests</td>
+					<td><textarea name="comments" cols="25" rows="5"></textarea><br/></td>
+					</tr>
+					<tr>
+					<td>Relationship status</td>	
+					<tr><td></td><td><input class="span2" type="radio" name = "Sex">Single<br/></td></tr>
+					<tr><td></td><td><input class="span2" type="radio" name = "Sex">Committed<br/></td></tr>
+					<tr><td></td><td><input class="span2" type="radio" name = "Sex">Complicated<br/></td></tr>
+					</tr>
+			</table>
+			<br/>
+			<br/>
+			<input class = "span2" type = "submit" value = "Register" />
+
+
+	  </form>
+        
       </div>
 
       <hr>
