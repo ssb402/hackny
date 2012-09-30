@@ -1,34 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Find A Party Tonight!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+  <? include "header.php" ?>
 
   <body>
 
@@ -43,9 +15,9 @@
           <a class="brand" href="#">Find A Party Tonight!</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
             <form class="navbar-form pull-right">
               <input class="span2" type="text" placeholder="Email">
@@ -71,12 +43,12 @@
                 <p>
                     Enter your zip code:
                 </p>
-                <form id="zip-form" action="post" class="form form-horizontal">
+                <form id="zip-form" method="post" action="party_list.php" class="form">
                     <p>
-                        <input type="text">
+                        <input type="text" placeholder="Only valid US zip codes">
                     </p>
                     <p>
-                        <button class="btn btn-large btn-primary" type="button">Go Fetch!</button>
+                        <button class="btn btn-large btn-primary" type="button">Let's Party!</button>
                     </p>
                 </form>
             </center>
@@ -84,10 +56,7 @@
       </div>
 
       <hr>
-
-      <footer>
-        <p>&copy; A HackNY App 2012</p>
-      </footer>
+        <? include "footer.php" ?>
 
     </div> <!-- /container -->
 
